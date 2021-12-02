@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Real Time Image Identification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+    
+    
+      
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  
+<body>
+<center>
+  <div class="head">
+    <h1 class="btn btn-info heading w3-container w3-center w3-animate-top">Case Study between Google Lens and MobileNet</h1>
+    <br>
+    <br>
+    <br>
+    <marquee id="mar">This Test May Not Be Accurate For You Because Of Photo Refrences</marquee>
+    <br>
+    <br>
+    <br>
+    <button data-toggle="modal" data-target="#First_Space_Encyclopaedia" class="btn btn-dark bvd">Click here To Know More About google Lens And Mobilenet </button>
+    <div class="modal fade" id="First_Space_Encyclopaedia">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Case Study</h4>
+          </div>
+         
+          <div class="modal-body">
+            <img src="eiffel-tower.jpeg" class="img-responsive img_modal">
+            <br>
+            <h5>Google lens</h5>
+            <p class="p_modal">Google Lens is an image recognition technology developed by Google, designed to bring up relevant information related to objects it identifies using visual analysis based on a neural network. First announced during Google I/O 2017,it was first provided as a standalone app, later being integrated into Android's standard camera app.<br>
+          <br>
+          <br>
+          <h5>MobileNet</h5>
+          <p class="p_modal">We present a class of efficient models called MobileNets for mobile and embedded vision applications. MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. We introduce two simple global hyper-parameters that efficiently trade off between latency and accuracy. These hyper-parameters allow the model builder to choose the right sized model for their application based on the constraints of the problem.</p><br>
+
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <div class="bob col-xs-12">
+
+			<li class="col-sm-4 col-xs-12">
+				<b style="color: rgb(255, 0, 0);">Test Image - </b><img src="18C9B944-3B5F-44C4-95D8-C036BB24BC33_1_105_c.jpeg" class="img-responsive">
+			</li>
+			<h5 class="col-sm-4 col-xs-12" >Output on <b>Google Lens</b> :-
+				<span>Teddy Bear</span>  
+			</h5>
+			<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> :-
+				<span>Toy</span>  
+			</h5>
+
+			<div class="bob3" class="col-xs-12">
+				<h4>Result :- </h4>
+				<hr>
+				<h4>Google Lens is More Accurate</h4>
+			</div>
+
+		</div>
+		<br>
+
+		<div class="bob col-xs-12">
+
+			<li class="col-sm-4 col-xs-12">
+				<b style="color: rgb(255, 0, 0);">Test Image - </b><img src="1FB3FF33-33EA-4A50-B7C2-66505B7EBC6F_1_105_c.jpeg" class="img-responsive">
+			</li>
+			<h5 class="col-sm-4 col-xs-12" >Output on <b>Google Lens</b> :-
+				<span>Game</span>  
+			</h5>
+			<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> :-
+				<span>Computer</span>  
+			</h5>
+
+			<div class="bob3" class="col-xs-12">
+				<h4>Result :- </h4>
+				<hr>
+				<h4>Google Lens is more accurate!</h4>
+			</div>
+
+		</div>
+				
+		<br>
+
+		<div class="bob col-xs-12">
+
+			<li class="col-sm-4 col-xs-12">
+				<b style="color: rgb(255, 0, 0);">Test Image - </b><img src="26E8A96A-43E9-4718-A1A3-90C40A9AE018_1_105_c.jpeg" class="img-responsive">
+			</li>
+			<h5 class="col-sm-4 col-xs-12" >Output on <b>Google Lens</b> :-
+				<span>Vase</span>  
+			</h5>
+			<h5 class="col-sm-4 col-xs-12">Output on <b>MobileNet </b> :-
+				<span>Glass vase</span>  
+			</h5>
+
+			<div class="bob3" class="col-xs-12">
+				<h4>Result :- </h4>
+				<hr>
+				<h4>Tie</h4>
+			</div>
+
+		</div>
+				
+		<br>
+
+		<div class="bob col-xs-12">
+
+			<li class="col-sm-4 col-xs-12">
+				<b style="color: rgb(255, 0, 0);">Test Image - </b><img src="6009A205-4E5A-4044-9095-E6FC6EF72C6A_1_105_c.jpeg" class="img-responsive">
+			</li>
+			<h5 class="col-sm-4 col-xs-12" >Output on <b>Google Lens</b> :-
+				<span>Toy</span>  
+			</h5>
+			<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> :-
+				<span>Glass Toy</span>  
+			</h5>
+
+			<div class="bob3" class="col-xs-12">
+				<h4>Result :- </h4>
+				<hr>
+				<h4>MobileNet is more accurate</h4>
+			</div>
+
+		</div>
+				
+		<br>
+
+		<div class="bob col-xs-12">
+
+			<li class="col-sm-4 col-xs-12">
+				<b style="color: rgb(255, 0, 0);">Test Image - </b><img src="87C535FB-229F-4194-99A8-6C6ED827F9BF_1_105_c.jpeg" class="img-responsive">
+			</li>
+			<h5 class="col-sm-4 col-xs-12" >Output on <b>Google Lens</b> :-
+				<span>Slipper</span>  
+			</h5>
+			<h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> :-
+				<span>Slipper</span>  
+			</h5>
+
+			<div class="bob3" class="col-xs-12">
+				<h4>Result :- </h4>
+				<hr>
+				<h4>Tie</h4>
+			</div>
+
+		</div>
+				
+		<br>
+
+
+	</ol>
+<br><br>
+	<h4 class="col-xs-12 result">
+	I have tested 5 images<br>
+	 <b>Google Lens</b> have predicted 4 of them more accurately. And <b>MobileNet</b>Has predicted 3<br>
+	 So according to my case study <b>Google Lens</b> is more Accurate</h4>
+</div>
+<br><br>
+    </div>
+
+    
+
+    </body>
+    </html>
